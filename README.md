@@ -24,7 +24,7 @@ Configure the root of your repository with the following files and directories. 
   * You can assume that the linked list won't have duplicated values
 
 ## Tests
-Unit test each method of your constructor. 
+Unit test each method of your class. 
 
 ## Documentation
 In your README.md describe the exported values of each module you have defined. Every function description should include it's arity (expected number of paramiters), the expected data for each paremeter (data-type and limitations), and it's behavior (for both valid and invalid use). Feel free to write any additional information in your README.md.
