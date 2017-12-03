@@ -10,4 +10,4 @@ describe(`model.js`, () => {
   test(`LinkedList's find method should run again on the next node if the value has not been found yet and the next node is not null`, () => {
     expect().toBe();
   });
-})
+});
