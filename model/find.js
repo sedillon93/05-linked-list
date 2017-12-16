@@ -19,16 +19,15 @@ class LinkedList{
   }
 
   find(nodeValue){
-    if(!this){
+    if(!this)
       return null;
-    }
-    if(this.value !== nodeValue){
-      console.log(`I ran in the second if`);
+
+    if(this.value !== nodeValue)
       this.next.find(nodeValue);
-    }else
-    console.log(`I ran outside the if statements`);
-    console.log(this);
-    return this;
+
+    else
+      console.log(this);
+      return this;
   }
 
   remove(node){
