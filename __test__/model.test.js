@@ -9,11 +9,12 @@ describe(`model.js`, () => {
   result.append(new LinkedList(3));
   result.append(new LinkedList(5));
 
-  test.only(`LinkedList's find method should return node if its value matches the value given as the argument`, () => {
-    let foundNode = result.find(3);
-    expect(foundNode.value).toEqual(3);
+  test(`LinkedList's find method should return node if its value matches the value given as the argument`, () => {
+    let foundValue = result.find(3);
+    expect(foundValue).toEqual(3);
   });
   test(`LinkedList's find method should return null if it reaches the final node`, () => {
-    expect(result.find(9)).toBeNull();
+    let foundValue = result.find(9);
+    expect(foundValue).toBeNull();
   });
 });

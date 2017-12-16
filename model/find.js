@@ -19,14 +19,16 @@ class LinkedList{
   }
 
   find(nodeValue){
-    if(!this)
+    if(!this){
+      console.log(`There are no more nodes`);
       return null;
+    }
 
-    if(this.value !== nodeValue)
+    if(this.value !== nodeValue){
       this.next.find(nodeValue);
+    }
 
     else
-      console.log(this);
       return this;
   }
 
