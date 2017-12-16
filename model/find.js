@@ -1,6 +1,5 @@
 'use strict';
 
-//vinicio - classes are not hoisted :p
 class LinkedList{
   constructor(value){
     this.value = value;
@@ -19,16 +18,16 @@ class LinkedList{
     return this;
   }
 
-  find(value){
-    if(this.value === value){
-      return this.value;
-    }
-
-    else if(this.next === null){
+  find(nodeValue){
+    if(!this.next){
       return null;
     }
 
-    this.next.find(value);
+    if(this.value !== nodeValue){
+      this.next.find(nodeValue);
+    }
+
+    return this.value;
   }
 
   remove(node){
