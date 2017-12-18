@@ -19,17 +19,17 @@ class LinkedList{
   }
 
   find(nodeValue){
-    if(!this){
-      console.log(`There are no more nodes`);
-      return null;
+    if(this.value !== nodeValue && this.next){
+      return this.next.find(nodeValue);
     }
 
-    if(this.value !== nodeValue){
-      this.next.find(nodeValue);
-    }
-
-    else
+    else if(this.value === nodeValue){
       return this;
+    }
+
+      if(!this.next){
+        return null;
+      }
   }
 
   remove(node){

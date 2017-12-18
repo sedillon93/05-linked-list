@@ -10,7 +10,7 @@ describe(`model.js`, () => {
   result.append(new LinkedList(5));
 
   test(`LinkedList's find method should return node if its value matches the value given as the argument`, () => {
-    let foundValue = result.find(3);
+    let foundValue = result.find(3).value;
     expect(foundValue).toEqual(3);
   });
   test(`LinkedList's find method should return null if it reaches the final node`, () => {
